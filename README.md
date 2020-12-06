@@ -1,6 +1,6 @@
 ## 🚀 Personal Portfolio Site built with Gatsby, React and Styled Components
 
-1.  **Sections**
+## Sections Included:
 ## Featured Projects
 ## About
 ## Contact
