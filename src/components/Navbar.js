@@ -8,11 +8,10 @@ import styled from 'styled-components'
 const Navigation = styled.nav`
   height: 10vh;
   display: flex;
-  background-color: #fff;
+  background-color: #292A2C;
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
-  border-bottom: 2px solid #33333320;
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
@@ -51,7 +50,8 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #fff;
+    background-color: #292A2C;
+    color: #fff;
     transition: all 0.3s ease-in;
     top: 8vh;
     left: ${props => (props.open ? "-100%" : "0")};
@@ -59,7 +59,7 @@ const Navbox = styled.div`
 `
 
 const Hamburger = styled.div`
-  background-color: #111;
+  background-color: #fff;
   width: 30px;
   height: 3px;
   transition: all .3s linear;
@@ -71,7 +71,7 @@ const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
-    background-color: #111;
+    background-color: #fff;
     content: "";
     position: absolute;
     transition: all 0.3s linear;

@@ -12,10 +12,11 @@ const LogoWrap = styled.div`
     flex: 0 1 25px;
   }
 `
+
 const Logo = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(name: { eq: "gatsby-icon" }, extension: { eq: "png" }) {
+      file(name: { eq: "logo" }, extension: { eq: "png" }) {
         childImageSharp {
           fluid(maxWidth: 50, pngQuality: 80) {
             ...GatsbyImageSharpFluid

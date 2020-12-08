@@ -38,6 +38,7 @@ const Layout = ({ children }) => {
       <Div>
         <main>{children}</main>
         <footer style={{
+          fontSize: `1.2rem`,
           marginTop: `2rem`
         }}>
           © Copyright Felix Nagel {new Date().getFullYear()}

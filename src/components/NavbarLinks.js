@@ -6,7 +6,8 @@ import styled from "styled-components"
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: #111;
+  font-size: 1.6rem;
+  color: #fff;
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
@@ -21,13 +22,13 @@ const NavItem = styled(Link)`
     width: 0%;
     content: ".";
     color: transparent;
-    background: goldenrod;
+    background: #FFC25B;
     height: 1px;
     transition: all 0.4s ease-in;
   }
 
   :hover {
-    color: goldenrod;
+    color: #FFC25B;
     ::after {
       width: 100%;
     }

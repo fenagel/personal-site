@@ -12,11 +12,15 @@ const MyHeader = styled.header`
   margin-bottom: 1.45rem;
   background: #292A2C;
 `
+const StyledH1 = styled.h1`
+  font-size: 3rem;
+  margin: 0;
+`
 
 const Header = ({ siteTitle }) => (
   <MyHeader>
     <Div>
-      <h1 style={{ margin: 0 }}>
+      <StyledH1>
         <Link
           style={{
             color: `white`,
@@ -25,7 +29,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </StyledH1>
     </Div>
   </MyHeader>
 )
