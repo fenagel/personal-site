@@ -9,7 +9,6 @@ const Div = styled.div`
   padding: 1.45rem 1.0875rem;
 `
 const MyHeader = styled.header`
-  margin-bottom: 1.45rem;
   background: #292A2C;
 `
 const StyledH1 = styled.h1`
