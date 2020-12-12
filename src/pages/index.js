@@ -33,7 +33,7 @@ const HeaderHome = styled.div`
 const GridImage = styled.div`
   grid-column-start: 1;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
 `
 
 const Intro = styled.div`
@@ -57,11 +57,14 @@ const IntroDiv = styled.div(props => ({
   marginRight: props.mr,
   marginBottom: props.mb,
   marginTop: props.mt,
+  paddingTop: props.pt,
+  padding: props.padding,
   gridTemplateColumns: props.gridTempCol,
   gridColumnGap: props.gridColGap,
   justifyItems: props.justifyItems,
   alignItems: props.alignItems,
-  justifyContent: props.justifyContent
+  justifyContent: props.justifyContent,
+  textAlign: props.textAlign
 }))
 
 
@@ -73,16 +76,21 @@ const IntroText = styled.p(props => ({
   marginRight: props.mr,
   gridColumn: props.gridCol,
   alignSelf: props.alignSelf,
-  justifySelf: props.justifySelf
+  justifySelf: props.justifySelf,
+  textAlign: props.textAlign
 }))
 
 const IntroGrid = styled.div`
   font-size: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
   align-items: center;
+  justify-items: start;
   margin-bottom: 5rem;
+`
+
+const StyledCode = styled(Code)`
+  transform: translate(-10%, 20%);
 `
 
 const StyledPlane = styled(Airplane)`
@@ -90,10 +98,20 @@ const StyledPlane = styled(Airplane)`
   margin-left: 10rem;
 `
 
-const StyledDesign = styled(Wireframe)`
+const StyledDevices = styled(Webdevices)`
   justify-self: center;
-  margin-left: 10rem;
 `
+
+const StyledDesign = styled(Wireframe)`
+  margin-left: 10rem;
+  justify-self: center;
+`
+
+const StyledSpecs = styled(Specs)`
+  justify-self: center;
+`
+
+
 
 const IndexPage = () => (
   <Layout>
@@ -108,10 +126,9 @@ const IndexPage = () => (
     <Intro>
       <IntroDiv
         display="grid"
-        gridTempCol="1.5fr 1fr"
+        gridTempCol="2fr 1fr"
         gridColGap="10rem"
-        mb="10rem"
-        mt="10rem"
+        mb="15rem"
       >
         <IntroText
           fSize= "2.5rem"
@@ -123,30 +140,44 @@ const IndexPage = () => (
         >
         With my background online marketing & ecommerce I know what today's websites need to be marketable.
         </IntroText>
-        <Code height="30rem" width="30rem" />
+        <StyledCode height="30rem" width="30rem" />
       </IntroDiv>
-      <IntroDiv
-        display="flex"
-      >
+      <IntroGrid>
         <StyledPlane height="30rem" width="30rem" />
         <IntroText
-          fSize="2rem"
-          alignItems="center"
+          fSize="2.5rem"
+          justifySelf="center"
         >
         Fast load times are a top priority!
         </IntroText>
-      </IntroDiv>
+      </IntroGrid>
       <IntroGrid>
         <IntroText
+          fSize="2.5rem"
           ml="10rem"
         >
-        Websites should be responsive for every screen size
+        Websites should be responsive for every screen
         </IntroText>
-        <Webdevices height="30rem" width="30rem" />
+        <StyledDevices height="30rem" width="30rem" />
       </IntroGrid>
       <IntroGrid>
         <StyledDesign height="30rem" width="30rem" />
-        <p>The design should be clear with a good ui/ux</p>
+        <IntroText
+          fSize="2.5rem"
+          justifySelf="center"
+        >
+        A good UI / UX is essential
+        </IntroText>
+      </IntroGrid>
+      <IntroGrid>
+        <IntroText
+          fSize="2.5rem"
+          ml="10rem"
+          justifySelf="center"
+        >
+          Create a brand experience that is persuasive
+        </IntroText>
+        <StyledSpecs height="30rem" width="30rem" />
       </IntroGrid>
     </Intro>
     <Link to="/projects/">Go to p</Link>
