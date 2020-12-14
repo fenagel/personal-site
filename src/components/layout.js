@@ -16,7 +16,6 @@ import styled from "styled-components"
 
 const Div = styled.div`
 margin: 0 auto;
-max-width: 1200px;
 `
 
 const Layout = ({ children }) => {
@@ -37,7 +36,8 @@ const Layout = ({ children }) => {
       <Div>
         <main>{children}</main>
         <footer style={{
-          fontSize: `1.2rem`,
+          fontSize: `1.8rem`,
+          padding: `2rem`,
           marginTop: `2rem`
         }}>
           © Copyright Felix Nagel {new Date().getFullYear()}
