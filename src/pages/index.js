@@ -85,7 +85,7 @@ const IndexPage = () => (
         justifyItems="center"
       >
         <Paragraph
-          fSize= "2rem"
+          fSize= "3rem"
           alignSelf="center"
           fWeight="700"
         >

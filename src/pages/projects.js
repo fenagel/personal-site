@@ -13,6 +13,38 @@ const StyledMobile = styled(Mobile)`
   justify-self: end;
 `
 
+const TechGrid = styled.div`
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+  grid-row-gap: 5rem;
+  grid-column-gap: .805rem;
+`
+
+const TechGridItem = styled.div`
+  display: grid;
+  justify-self: center;
+  background-image: linear-gradient(to right bottom,rgba(108,117,125,.8),rgba(52,58,64,.8));
+  width: 16rem;
+  height: 14rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.4);
+  padding: 1.5rem;
+`
+
+const TechLogo = styled.div`
+  justify-self: center;
+  align-self: center;
+  width: 10rem;
+  height: 8rem;
+`
+
+const TechName = styled.div`
+  justify-self: center;
+  align-self: center;
+  font-weight: 400;
+`
+
 const SecondPage = () => (
   <Layout>
     <SEO title="Web Development Projects" />
@@ -33,12 +65,60 @@ const SecondPage = () => (
         Featured Projects
       </Heading>
     </Div>
-    <Paragraph
-      fSize="2.5rem"
+    <Div
+      display="flex"
+      flexDir="column"
+      alignItems="center"
+      mt="3rem"
     >
-    Welcome to page 2
-    </Paragraph>
-    <Link to="/">Go back to the homepage</Link>
+      <Paragraph
+        fSize="2.5rem"
+      >
+      Technologies
+      </Paragraph>
+    </Div>
+    <TechGrid>
+      <TechGridItem>
+        <TechName>HTML</TechName>
+      </TechGridItem>
+      <TechGridItem>
+      <TechName>CSS</TechName>
+      </TechGridItem>
+      <TechGridItem>
+      <TechName>SASS</TechName>
+      </TechGridItem>
+      <TechGridItem>
+        <TechName>Styled Components</TechName>
+      </TechGridItem>
+      <TechGridItem>
+        <TechName>JavaScript</TechName>
+      </TechGridItem>
+      <TechGridItem>
+        <TechName>React</TechName>
+      </TechGridItem>
+      <TechGridItem>
+        <TechName>Gatsby</TechName>
+      </TechGridItem>
+      <TechGridItem>
+        <TechName>Ruby</TechName>
+      </TechGridItem>
+      <TechGridItem>
+        <TechName>Ruby on Rails</TechName>
+      </TechGridItem>
+      <TechGridItem>
+        <TechName>PostgeSQL</TechName>
+      </TechGridItem>
+      <TechGridItem>
+        <TechName>Heroku</TechName>
+      </TechGridItem>
+      <TechGridItem>
+        <TechName>Firebase</TechName>
+      </TechGridItem>
+      <TechGridItem>
+        <TechName>GraphQL</TechName>
+      </TechGridItem>
+    </TechGrid>
+    
   </Layout>
 )
 
