@@ -1,6 +1,5 @@
 import React from "react"
 import styled from 'styled-components'
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,6 +7,19 @@ import Div from '../styles/Div'
 import Heading from '../styles/Heading'
 import Paragraph from '../styles/Paragraph'
 import Mobile from '../assets/mobileapp.svg'
+// import Html from '../assets/html.svg'
+// import Css from '../assets/css.svg'
+// import Firebase from '../assets/firebase.svg'
+// import Graphql from '../assets/graphql.svg'
+// import Heroku from '../assets/heroku.svg'
+// import GatsbyLogo from '../assets/gatsby.svg'
+// import Javascript from '../assets/javascript.svg'
+// import Postgresql from '../assets/postgresql.svg'
+// import Rails from '../assets/rails.svg'
+// import ReactLogo from '../assets/react.svg'
+// import Ruby from '../assets/ruby.svg'
+// import Sass from '../assets/sass.svg'
+// import StyledC from '../assets/styled-components.svg'
 
 const StyledMobile = styled(Mobile)`
   justify-self: end;
@@ -30,13 +42,6 @@ const TechGridItem = styled.div`
   border-radius: 1.5rem;
   box-shadow: 0 1rem 3rem rgba(0,0,0,.4);
   padding: 1.5rem;
-`
-
-const TechLogo = styled.div`
-  justify-self: center;
-  align-self: center;
-  width: 10rem;
-  height: 8rem;
 `
 
 const TechName = styled.div`
@@ -79,42 +84,55 @@ const Projects = () => (
     
     <TechGrid>
       <TechGridItem>
+        
         <TechName>HTML</TechName>
       </TechGridItem>
       <TechGridItem>
-      <TechName>CSS</TechName>
+        
+        <TechName>CSS</TechName>
       </TechGridItem>
       <TechGridItem>
-      <TechName>SASS</TechName>
+ 
+        <TechName>SASS</TechName>
       </TechGridItem>
       <TechGridItem>
+
         <TechName>Styled Components</TechName>
       </TechGridItem>
       <TechGridItem>
+      
         <TechName>JavaScript</TechName>
       </TechGridItem>
       <TechGridItem>
+        
         <TechName>React</TechName>
       </TechGridItem>
       <TechGridItem>
+       
         <TechName>Gatsby</TechName>
       </TechGridItem>
       <TechGridItem>
+
         <TechName>Ruby</TechName>
       </TechGridItem>
       <TechGridItem>
+     
         <TechName>Ruby on Rails</TechName>
       </TechGridItem>
       <TechGridItem>
+       
         <TechName>PostgeSQL</TechName>
       </TechGridItem>
       <TechGridItem>
+     
         <TechName>Heroku</TechName>
       </TechGridItem>
       <TechGridItem>
+     
         <TechName>Firebase</TechName>
       </TechGridItem>
       <TechGridItem>
+ 
         <TechName>GraphQL</TechName>
       </TechGridItem>
     </TechGrid>

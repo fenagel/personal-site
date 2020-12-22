@@ -7,6 +7,7 @@ const Paragraph = styled.p(props => ({
   marginLeft: props.ml,
   marginRight: props.mr,
   marginBottom: props.mb,
+  marginTop: props.mt,
   padding: props.padding,
   gridColumn: props.gridCol,
   alignSelf: props.alignSelf,
