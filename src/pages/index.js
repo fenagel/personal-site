@@ -17,6 +17,7 @@ import SEO from "../components/seo"
 const HeaderHome = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-column: full-start/full-end;
   align-items: center;
   justify-items: center;
   height: 55vh;
@@ -36,11 +37,10 @@ const Intro = styled.div`
   padding-top: 25rem;
   margin-top: -10rem;
   padding-bottom: 10rem;
+  grid-column: full-start/full-end;
 `
 
 const IntroGrid = styled.div`
-  width: 120rem;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 5rem;
@@ -50,7 +50,6 @@ const IntroGrid = styled.div`
 `
 
 const StyledAirplane = styled(Airplane)`
-  
 `
 
 const StyledWireframe = styled(Wireframe)`
@@ -75,7 +74,6 @@ const IndexPage = () => (
     </HeaderHome>
     <Intro>
       <Div
-        width="120rem"
         display="grid"
         gridTempCol="2fr 1fr"
         gridColGap="5rem"
@@ -83,10 +81,10 @@ const IndexPage = () => (
         mr="20rem"
         mb="15rem"
         justifyItems="center"
+        gridCol="center-start/center-end"
       >
         <Paragraph
           fSize= "3rem"
-          alignSelf="center"
           fWeight="700"
         >
         With my background online marketing & ecommerce I know what today's websites need to be marketable.
@@ -95,9 +93,8 @@ const IndexPage = () => (
       </Div>
       <IntroGrid>
         <Div
-          display="flex"
-          flexDir="column"
-          alignItems="center"
+          display="grid"
+          justifyItems="center"
         >
           <StyledAirplane height="20rem" width="20rem" />
           <Paragraph
@@ -107,9 +104,8 @@ const IndexPage = () => (
           </Paragraph>
         </Div>
         <Div
-          display="flex"
-          flexDir="column"
-          alignItems="center"
+          display="grid"
+          justifyItems="center"
         >
           <Webdevices height="20rem" width="20rem" />
           <Paragraph
@@ -121,10 +117,9 @@ const IndexPage = () => (
       </IntroGrid>
       <IntroGrid>
       <Div
-          display="flex"
-          flexDir="column"
-          alignItems="center"
-      >
+          display="grid"
+          justifyItems="center"
+        >
         <StyledWireframe height="20rem" width="20rem" />
         <Paragraph
           fSize="2rem"
@@ -133,10 +128,9 @@ const IndexPage = () => (
         </Paragraph>
       </Div>
       <Div
-          display="flex"
-          flexDir="column"
-          alignItems="center"
-      >
+          display="grid"
+          justifyItems="center"
+        >
         <Specs height="20rem" width="20rem" />
         <Paragraph
           fSize="2rem"

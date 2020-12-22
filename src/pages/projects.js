@@ -45,7 +45,7 @@ const TechName = styled.div`
   font-weight: 400;
 `
 
-const SecondPage = () => (
+const Projects = () => (
   <Layout>
     <SEO title="Web Development Projects" />
     <Div
@@ -53,6 +53,7 @@ const SecondPage = () => (
       gridTempCol="1fr 1fr"
       alignItems="center"
       justifyItems="center"
+      gridCol="full-start/full-end"
 
     >
       <StyledMobile height="30rem" width="30rem" />
@@ -66,17 +67,16 @@ const SecondPage = () => (
       </Heading>
     </Div>
     <Div
-      display="flex"
-      flexDir="column"
-      alignItems="center"
-      mt="3rem"
+      gridCol="center-start/center-end"
     >
       <Paragraph
-        fSize="2.5rem"
+        fSize="3rem"
+        textAlign="center"
+        mb="10rem"
       >
       Technologies
       </Paragraph>
-    </Div>
+    
     <TechGrid>
       <TechGridItem>
         <TechName>HTML</TechName>
@@ -118,8 +118,8 @@ const SecondPage = () => (
         <TechName>GraphQL</TechName>
       </TechGridItem>
     </TechGrid>
-    
+    </Div>
   </Layout>
 )
 
-export default SecondPage
+export default Projects

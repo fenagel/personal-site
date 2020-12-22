@@ -12,10 +12,9 @@ const Navigation = styled.nav`
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
-  margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
-  align-self: center;
+  grid-column: full-start/full-end;
 
   @media (max-width: 768px) {
     position: sticky;
