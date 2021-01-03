@@ -1,7 +1,13 @@
 import styled from 'styled-components'
 
-const Div = styled.div(props => ({
+const Button = styled.button(props => ({
   display: props.display,
+  height: props.height,
+  width: props.width,
+  fontSize: props.fSize,
+  borderRadius: props.borderRadius,
+  background: props.background,
+  color: props.color,
   margin: props.margin,
   marginLeft: props.ml,
   marginRight: props.mr,
@@ -14,15 +20,16 @@ const Div = styled.div(props => ({
   paddingRight: props.pr,
   flexDirection: props.flexDir,
   gridColumn: props.gridCol,
-  gridRow: props.gridRow,
   gridTemplateColumns: props.gridTempCol,
   gridColumnGap: props.gridColGap,
   justifyItems: props.justifyItems,
   alignItems: props.alignItems,
+  justifyContent: props.justifyContent,
+  textAlign: props.textAlign,
   alignSelf: props.alignSelf,
   justifySelf: props.justifySelf,
-  justifyContent: props.justifyContent,
-  textAlign: props.textAlign
+  gridRow: props.gridRow,
+  gridColumn: props.gridColumn
 }));
 
-export default Div;
+export default Button;

@@ -11,7 +11,10 @@ const Heading = styled.h1(props => ({
   margin: props.margin,
   alignSelf: props.alignSelf,
   justifySelf: props.justifySelf,
-  textAlign: props.textAlign
+  textAlign: props.textAlign,
+  gridRow: props.gridRow,
+  gridColumn: props.gridColumn,
+  animation: props.animation
 }))
 
 export default Heading;

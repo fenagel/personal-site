@@ -5,6 +5,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import Div from '../styles/Div'
 import Heading from '../styles/Heading'
+import Button from '../styles/Button'
 import Paragraph from '../styles/Paragraph'
 import Image from "../components/image"
 import Code from "../assets/code.svg"
@@ -16,26 +17,22 @@ import SEO from "../components/seo"
 
 const HeaderHome = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3,minmax(min-content,max-content));
+  grid-template-columns: minmax(6rem,1fr) minmax(50%,90rem) minmax(min-content,50rem) minmax(6rem,1fr);
   grid-column: full-start/full-end;
-  align-items: center;
-  justify-items: center;
-  height: 55vh;
+  align-content: center;
+  justify-content: center;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 5%;
+  height: 90vh;
   background-color: #292A2C;
   clip-path: ellipse(100% 50%);
-`
-
-const GridImage = styled.div`
-  grid-column-start: 1;
-  text-align: center;
-  font-size: 3rem;
-  justify-self: end;
 `
 
 const Intro = styled.div`
   background-color: #45464A;
   padding-top: 25rem;
-  margin-top: -10rem;
+  margin-top: -15rem;
   padding-bottom: 10rem;
   grid-column: full-start/full-end;
 `
@@ -60,17 +57,44 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeaderHome>
-      <GridImage>
-        <Image />
-        <p>Felix Nagel</p>
-      </GridImage>
       <Heading
-        fSize="4.5rem"
-        fWeight="700"
-        lineHeight="1.7"
+        fSize="4rem"
+        lineHeight="1.6"
+        gridRow="1/2"
+        gridColumn="2/3"
+        
       >
-      Web Developer &<br></br>Online Marketing Specialist
+        Creating awesome websites and helping you market them effectively online!
       </Heading>
+      <Heading
+        fSize="3rem"
+        gridRow="2/3"
+        gridColumn="2/3"
+      >
+        Don't hesitate to reach out and have a chat with me.
+      </Heading>
+      <Button
+        fSize="2rem"
+        color="#fff"
+        background="#FFC25B"
+        width="20rem"
+        height="6rem"
+        borderRadius="25px"
+        gridRow="4/5"
+        gridColumn="2/3"
+        alignSelf="start"
+        justifySelf="start"
+      >
+        Let's collaborate!
+      </Button>
+      <Div
+        gridRow="1/span 2"
+        gridCol="3/4"
+        alignSelf="start"
+        justifySelf="center"
+      >
+       <Image />
+      </Div>
     </HeaderHome>
     <Intro>
       <Div
