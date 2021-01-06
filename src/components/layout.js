@@ -17,7 +17,7 @@ import styled from "styled-components"
 const Div = styled.div`
   position: relative;
   display: grid;
-  grid-template-rows: 10rem minmax(75rem,calc(60vh - 10rem)) repeat(7,min-content);
+  grid-template-rows: 10rem repeat(8,min-content);
   grid-template-columns: [full-start] minmax(6rem,1fr) [center-start] repeat(8,[col-start] minmax(min-content,14rem) [col-end]) [center-end] minmax(6rem,1fr) [full-end]
 `
 

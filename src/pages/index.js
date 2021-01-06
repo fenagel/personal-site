@@ -68,9 +68,8 @@ const HeaderHome = styled.div`
   justify-content: center;
   grid-row-gap: 1.5rem;
   grid-column-gap: 5%;
-  height: 70vh;
   background-color: #292A2C;
-  clip-path: ellipse(100% 50%);
+  height: 70vh;
 `
 
 const H1Header = styled.h1`
@@ -107,10 +106,14 @@ const HeaderImage = styled.div`
 
 const Intro = styled.div`
   background-color: #45464A;
-  padding-top: 25rem;
-  margin-top: -15rem;
   padding-bottom: 10rem;
   grid-column: full-start/full-end;
+`
+
+const IntroHeading = styled.h1`
+  font-size: 3rem;
+  text-align: center;
+  margin: 10rem;
 `
 
 const IntroGrid = styled.div`
@@ -147,24 +150,9 @@ const IndexPage = () => (
       </HeaderImage>
     </HeaderHome>
     <Intro>
-      <Div
-        display="grid"
-        gridTempCol="2fr 1fr"
-        gridColGap="5rem"
-        ml="20rem"
-        mr="20rem"
-        mb="15rem"
-        justifyItems="center"
-        gridCol="center-start/center-end"
-      >
-        <Paragraph
-          fSize= "3rem"
-          fWeight="700"
-        >
+      <IntroHeading>
         With my background online marketing & ecommerce I know what today's websites need to be marketable.
-        </Paragraph>
-        <Code height="20rem" width="20rem" />
-      </Div>
+      </IntroHeading>
       <IntroGrid>
         <Div
           display="grid"
