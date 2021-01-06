@@ -1,35 +1,54 @@
 import styled from 'styled-components'
 
-const Button = styled.button(props => ({
-  display: props.display,
-  height: props.height,
-  width: props.width,
-  fontSize: props.fSize,
-  borderRadius: props.borderRadius,
-  background: props.background,
-  color: props.color,
-  margin: props.margin,
-  marginLeft: props.ml,
-  marginRight: props.mr,
-  marginBottom: props.mb,
-  marginTop: props.mt,
-  padding: props.padding,
-  paddingTop: props.pt,
-  paddingBottom: props.pb,
-  paddingLeft: props.pl,
-  paddingRight: props.pr,
-  flexDirection: props.flexDir,
-  gridColumn: props.gridCol,
-  gridTemplateColumns: props.gridTempCol,
-  gridColumnGap: props.gridColGap,
-  justifyItems: props.justifyItems,
-  alignItems: props.alignItems,
-  justifyContent: props.justifyContent,
-  textAlign: props.textAlign,
-  alignSelf: props.alignSelf,
-  justifySelf: props.justifySelf,
-  gridRow: props.gridRow,
-  gridColumn: props.gridColumn
-}));
+const Button = styled.button`
+  -webkit-appearance: button;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 4px;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  border: none;
+  color: #fff;
+  background: linear-gradient(to right,#FFC25B,#FFBC47);
+  font-family: inherit;
+  font-size: 1.7rem;
+  line-height: 1.231;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
 
-export default Button;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+
+  &:focus,
+  &:hover {
+    &::before {
+      opacity: 0.25;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.4;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+`
+
+export default Button
