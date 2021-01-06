@@ -2,22 +2,23 @@ import Typography from "typography"
 const typography = new Typography({
   baseFontSize: '10px',
   baseLineHeight: 1.58,
-  headerFontFamily: ['Varela Round', 'sans-serif'],
-  bodyFontFamily: ['Lora', 'serif'],
+  headerFontFamily: ['Nunito', 'sans-serif'],
+  bodyFontFamily: ['PT Sans', 'sans-serif'],
   scaleRatio: 2,
-  headerWeight: 400,
+  headerWeight: 300,
   bodyWeight: 400,
   boldWeight: 700,
   googleFonts: [
     {
-      name: 'Varela Round',
+      name: 'Nunito',
       styles: [
+        '300',
         '400',
         '700',
       ],
     },
     {
-      name: 'Lora',
+      name: 'PT Sans',
       styles: [
         '400',
         '400i',

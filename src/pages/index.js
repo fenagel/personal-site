@@ -1,11 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { keyframes } from "styled-components"
 
 import Layout from "../components/layout"
 import Div from '../styles/Div'
-import Heading from '../styles/Heading'
-import Button from '../styles/Button'
 import Paragraph from '../styles/Paragraph'
 import Image from "../components/image"
 import Code from "../assets/code.svg"
@@ -14,6 +13,50 @@ import Webdevices from "../assets/webdevices.svg"
 import Wireframe from "../assets/wireframe.svg"
 import Specs from "../assets/specs.svg"
 import SEO from "../components/seo"
+
+const moveInLeft = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+`
+
+const moveInRight = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+`
+
+const moveInBottom = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+`
 
 const HeaderHome = styled.div`
   display: grid;
@@ -24,9 +67,81 @@ const HeaderHome = styled.div`
   justify-content: center;
   grid-row-gap: 1.5rem;
   grid-column-gap: 5%;
-  height: 90vh;
+  height: 70vh;
   background-color: #292A2C;
   clip-path: ellipse(100% 50%);
+`
+
+const H1Header = styled.h1`
+  font-size: 4rem;
+  line-height: 1.1;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  animation: ${moveInLeft} 1s ease-out;
+`
+
+const H2Header = styled.h2`
+  font-size: 3rem;
+  grid-row: 2/3;
+  line-height: 1.1;
+  grid-column: 2/3;
+  animation: ${moveInLeft} 1s ease-out;
+`
+
+const Button = styled.button`
+  font-size: 2rem;
+  color: #fff;
+  background: linear-gradient(to right, #FFC25B, #ffb433);
+  outline: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  grid-row: 4/5;
+  grid-column: 2/3;
+  align-self: start;
+  justify-self: start;
+  animation: ${moveInBottom} 1s ease-out;
+
+  &:hover {
+    outline: none;
+    transform: translateY(-3px);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:focus, &:active {
+    transform: translateY(-1px);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+`
+
+const HeaderImage = styled.div`
+  grid-row: 1/span 2;
+  grid-column: 3/4;
+  align-self: start;
+  justify-self: center;
+  animation: ${moveInRight} 1s ease-out;
 `
 
 const Intro = styled.div`
@@ -57,44 +172,18 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeaderHome>
-      <Heading
-        fSize="4rem"
-        lineHeight="1.6"
-        gridRow="1/2"
-        gridColumn="2/3"
-        
-      >
+      <H1Header>
         Creating awesome websites and helping you market them effectively online!
-      </Heading>
-      <Heading
-        fSize="3rem"
-        gridRow="2/3"
-        gridColumn="2/3"
-      >
-        Don't hesitate to reach out and have a chat with me.
-      </Heading>
-      <Button
-        fSize="2rem"
-        color="#fff"
-        background="#FFC25B"
-        width="20rem"
-        height="6rem"
-        borderRadius="25px"
-        gridRow="4/5"
-        gridColumn="2/3"
-        alignSelf="start"
-        justifySelf="start"
-      >
-        Let's collaborate!
+      </H1Header>
+      <H2Header>
+        I’d love to collaborate on a project. Don’t hesitate to reach out.
+      </H2Header>
+      <Button>
+        Let's chat!
       </Button>
-      <Div
-        gridRow="1/span 2"
-        gridCol="3/4"
-        alignSelf="start"
-        justifySelf="center"
-      >
+      <HeaderImage>
        <Image />
-      </Div>
+      </HeaderImage>
     </HeaderHome>
     <Intro>
       <Div
