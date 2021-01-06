@@ -13,6 +13,15 @@ import Header from "./header"
 import Navbar from "./Navbar"
 import "./layout.css"
 import styled from "styled-components"
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.58;
+  }
+`
 
 const Div = styled.div`
   position: relative;
@@ -34,6 +43,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyle />
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <Div>
         <Navbar />

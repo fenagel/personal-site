@@ -8,12 +8,11 @@ import Button from '../styles/Button'
 import Div from '../styles/Div'
 import Paragraph from '../styles/Paragraph'
 import Image from "../components/image"
-import Code from "../assets/code.svg"
-import Airplane from "../assets/aircraft.svg"
-import Webdevices from "../assets/webdevices.svg"
-import Wireframe from "../assets/wireframe.svg"
-import Specs from "../assets/specs.svg"
 import SEO from "../components/seo"
+import Clock from '../assets/clock.svg'
+import Branding from '../assets/branding.svg'
+import Smartphone from '../assets/smartphone.svg'
+import UserExp from '../assets/user-experience.svg'
 
 const moveInLeft = keyframes`
   0% {
@@ -68,7 +67,7 @@ const HeaderHome = styled.div`
   justify-content: center;
   grid-row-gap: 1.5rem;
   grid-column-gap: 5%;
-  background-color: #292A2C;
+  background-color: #292a2c;
   height: 70vh;
 `
 
@@ -112,24 +111,24 @@ const Intro = styled.div`
 
 const IntroHeading = styled.h1`
   font-size: 3rem;
+  font-weight: 700;
   text-align: center;
   margin: 10rem;
 `
 
-const IntroGrid = styled.div`
+const WebsiteFeatures = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 5rem;
-  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: center-start/center-end;
+  margin: 0 15rem;
   justify-items: center;
-  margin-bottom: 20rem;
+  align-items: center;
+  animation: ${moveInLeft} 2s ease-out;
 `
-
-const StyledAirplane = styled(Airplane)`
-`
-
-const StyledWireframe = styled(Wireframe)`
-  
+const Feature = styled.div`
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 2rem;
 `
 
 const IndexPage = () => (
@@ -151,56 +150,34 @@ const IndexPage = () => (
     </HeaderHome>
     <Intro>
       <IntroHeading>
-        With my background online marketing & ecommerce I know what today's websites need to be marketable.
+        With my background online marketing & ecommerce<br></br>I know what today's websites need to be marketable.
       </IntroHeading>
-      <IntroGrid>
-        <Div
-          display="grid"
-          justifyItems="center"
-        >
-          <StyledAirplane height="20rem" width="20rem" />
-          <Paragraph
-            fSize="2rem"
-          >
-          Fast load times are a top priority!
+      <WebsiteFeatures>
+        <Feature>
+          <Clock width="15rem" height="15rem" style={{ fill: '#FFC25B' }} />
+          <Paragraph fSize="2rem">
+            Fast loading times!
           </Paragraph>
-        </Div>
-        <Div
-          display="grid"
-          justifyItems="center"
-        >
-          <Webdevices height="20rem" width="20rem" />
-          <Paragraph
-            fSize="2rem"
-          >
-          Websites should be responsive for every screen
+        </Feature>
+        <Feature>
+          <UserExp width="15rem" height="15rem" style={{ fill: '#FFC25B' }} />
+          <Paragraph fSize="2rem">
+            Clear UI / UX
           </Paragraph>
-        </Div>
-      </IntroGrid>
-      <IntroGrid>
-      <Div
-          display="grid"
-          justifyItems="center"
-        >
-        <StyledWireframe height="20rem" width="20rem" />
-        <Paragraph
-          fSize="2rem"
-        >
-        A good UI / UX is essential
-        </Paragraph>
-      </Div>
-      <Div
-          display="grid"
-          justifyItems="center"
-        >
-        <Specs height="20rem" width="20rem" />
-        <Paragraph
-          fSize="2rem"
-        >
-          Create a brand experience that is persuasive
-        </Paragraph>
-      </Div>
-      </IntroGrid>
+        </Feature>
+        <Feature>
+          <Smartphone width="15rem" height="15rem" style={{ fill: '#FFC25B' }} />
+          <Paragraph fSize="2rem">
+            Responsive for every screen
+          </Paragraph>
+        </Feature>
+        <Feature>
+          <Branding width="15rem" height="15rem" style={{ fill: '#FFC25B' }} />
+          <Paragraph fSize="2rem">
+            Persuasive brand experience
+          </Paragraph>
+        </Feature>
+      </WebsiteFeatures>
     </Intro>
   </Layout>
 )
