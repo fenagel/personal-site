@@ -13,6 +13,7 @@ import Clock from '../assets/clock.svg'
 import Branding from '../assets/branding.svg'
 import Smartphone from '../assets/smartphone.svg'
 import UserExp from '../assets/user-experience.svg'
+import ProcessImage from '../assets/Process.svg'
 
 const moveInLeft = keyframes`
   0% {
@@ -73,6 +74,7 @@ const HeaderHome = styled.div`
 
 const H1Header = styled.h1`
   font-size: 4rem;
+  font-weight: 700;
   line-height: 1.1;
   grid-row: 1/2;
   grid-column: 2/3;
@@ -113,14 +115,15 @@ const IntroHeading = styled.h1`
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
-  margin: 10rem;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
 `
 
 const WebsiteFeatures = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column: center-start/center-end;
-  margin: 0 15rem;
+  margin: 0 10rem;
   justify-items: center;
   align-items: center;
   animation: ${moveInLeft} 2s ease-out;
@@ -129,6 +132,41 @@ const Feature = styled.div`
   display: grid;
   justify-items: center;
   grid-row-gap: 2rem;
+`
+
+const Process = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10rem;
+  align-items: center;
+  margin: 0 10rem;
+`
+
+const ProcessSteps = styled.div`
+  
+`
+
+const ProcessStep = styled.div`
+  display: flex;
+  margin-bottom: 3rem;
+`
+
+const StepNumber = styled.p`
+  font-size: 4rem;
+  font-weight: 700;
+  margin-right: 5rem;
+`
+
+const StepDetails = styled.div``
+
+const StepHeading = styled.h3`
+  font-size: 2rem;
+  font-weight: 700;
+`
+
+const StepText = styled.p`
+  font-size: 1.6rem;
+  opacity: 0.85;
 `
 
 const IndexPage = () => (
@@ -178,7 +216,53 @@ const IndexPage = () => (
           </Paragraph>
         </Feature>
       </WebsiteFeatures>
+      <IntroHeading>
+        My Process for Building Good Websites
+      </IntroHeading>
+      <Process>
+        <ProcessImage width="40rem" height="40rem" />
+        <ProcessSteps>
+          <ProcessStep>
+            <StepNumber>01</StepNumber>
+            <StepDetails>
+            <StepHeading>Content</StepHeading>
+            <StepText>The content strategy will inform the design choices for the website.
+                Important things to cover are user stories, value propositions and visitor anticipations
+                </StepText>
+            </StepDetails>
+          </ProcessStep>
+          
+          <ProcessStep>
+            <StepNumber>02</StepNumber>
+            <StepDetails>
+            <StepHeading>Design & Develop</StepHeading>
+              <StepText>Wireframes, images and animations have to be perfected before development starts
+              </StepText>
+            </StepDetails>
+          </ProcessStep>
+
+          <ProcessStep>
+            <StepNumber>03</StepNumber>
+            <StepDetails>
+            <StepHeading>Test & Deploy</StepHeading>
+              <StepText>Testing in order to discover bugs is an important step before the website is deployed
+              </StepText>
+            </StepDetails>
+          </ProcessStep>
+
+          <ProcessStep>
+            <StepNumber>04</StepNumber>
+            <StepDetails>
+            <StepHeading>Conversation</StepHeading>
+              <StepText>Regular feedback and revisions are part of the process. Communication is essential to understand the requirements for each website
+              </StepText>
+            </StepDetails>
+          </ProcessStep>
+          
+        </ProcessSteps>
+      </Process>
     </Intro>
+    
   </Layout>
 )
 

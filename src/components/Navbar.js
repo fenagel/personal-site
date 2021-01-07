@@ -8,8 +8,8 @@ import styled from 'styled-components'
 const Navigation = styled.nav`
   height: 10vh;
   display: flex;
-  background-color: #292A2C;
-  position: relative;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   text-transform: uppercase;
   padding: 0 5vw;

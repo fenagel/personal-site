@@ -3,26 +3,49 @@ import styled from 'styled-components'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Div from '../styles/Div'
-import Heading from '../styles/Heading'
-import Paragraph from '../styles/Paragraph'
 import Mobile from '../assets/mobileapp.svg'
-// import Html from '../assets/html.svg'
-// import Css from '../assets/css.svg'
-// import Firebase from '../assets/firebase.svg'
-// import Graphql from '../assets/graphql.svg'
-// import Heroku from '../assets/heroku.svg'
-// import GatsbyLogo from '../assets/gatsby.svg'
-// import Javascript from '../assets/javascript.svg'
-// import Postgresql from '../assets/postgresql.svg'
-// import Rails from '../assets/rails.svg'
-// import ReactLogo from '../assets/react.svg'
-// import Ruby from '../assets/ruby.svg'
-// import Sass from '../assets/sass.svg'
-// import StyledC from '../assets/styled-components.svg'
+import Html from '../assets/html.svg'
+
+//Technologies Icons
+import CssLogo from '../assets/css.svg'
+import Firebase from '../assets/firebase.svg'
+import Gql from '../assets/graphql.svg'
+import Heroku from '../assets/heroku.svg'
+import GatLogo from '../assets/gatsby.svg'
+import Javascript from '../assets/javascript.svg'
+import PostgresLogo from '../assets/postgresql.svg'
+import Rails from '../assets/rails.svg'
+import RLogo from '../assets/reactlogo.svg'
+import Ruby from '../assets/ruby.svg'
+import Sass from '../assets/sass.svg'
+import SCLogo from '../assets/styled-components.svg'
+
+const ProjectsHeader = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-column: full-start/full-end;
+`
+
+const HeaderHeading = styled.h1`
+  font-size: 4rem;
+  font-weight: 700;
+  justify-self: start;
+`
+
+const HeaderText = styled.p`
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 10rem;
+`
 
 const StyledMobile = styled(Mobile)`
   justify-self: end;
+`
+
+const ProjectsGrid = styled.div`
+  grid-column: center-start/center-end;
 `
 
 const TechGrid = styled.div`
@@ -53,90 +76,72 @@ const TechName = styled.div`
 const Projects = () => (
   <Layout>
     <SEO title="Web Development Projects" />
-    <Div
-      display="grid"
-      gridTempCol="1fr 1fr"
-      alignItems="center"
-      justifyItems="center"
-      gridCol="full-start/full-end"
-
-    >
+    <ProjectsHeader>
       <StyledMobile height="30rem" width="30rem" />
-      <Heading
-        fSize="4.5rem"
-        fWeight="700"
-        lineHeight="1.7"
-        justifySelf="start"
-      >
+      <HeaderHeading>
         Featured Projects
-      </Heading>
-    </Div>
-    <Div
-      gridCol="center-start/center-end"
-    >
-      <Paragraph
-        fSize="3rem"
-        textAlign="center"
-        mb="10rem"
-      >
-      Technologies
-      </Paragraph>
-    
-    <TechGrid>
-      <TechGridItem>
-        
-        <TechName>HTML</TechName>
-      </TechGridItem>
-      <TechGridItem>
-        
-        <TechName>CSS</TechName>
-      </TechGridItem>
-      <TechGridItem>
- 
-        <TechName>SASS</TechName>
-      </TechGridItem>
-      <TechGridItem>
-
-        <TechName>Styled Components</TechName>
-      </TechGridItem>
-      <TechGridItem>
+      </HeaderHeading>
+    </ProjectsHeader>
+    <ProjectsGrid>
+      <HeaderText>
+        Technologies
+      </HeaderText>
       
-        <TechName>JavaScript</TechName>
-      </TechGridItem>
-      <TechGridItem>
-        
-        <TechName>React</TechName>
-      </TechGridItem>
-      <TechGridItem>
-       
-        <TechName>Gatsby</TechName>
-      </TechGridItem>
-      <TechGridItem>
-
-        <TechName>Ruby</TechName>
-      </TechGridItem>
-      <TechGridItem>
-     
-        <TechName>Ruby on Rails</TechName>
-      </TechGridItem>
-      <TechGridItem>
-       
-        <TechName>PostgeSQL</TechName>
-      </TechGridItem>
-      <TechGridItem>
-     
-        <TechName>Heroku</TechName>
-      </TechGridItem>
-      <TechGridItem>
-     
-        <TechName>Firebase</TechName>
-      </TechGridItem>
-      <TechGridItem>
- 
-        <TechName>GraphQL</TechName>
-      </TechGridItem>
-    </TechGrid>
-    </Div>
+      <TechGrid>
+        <TechGridItem>
+          <Html width="10rem" height="8rem" />
+          <TechName>HTML</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          <CssLogo width="10rem" height="8rem" />
+          <TechName>CSS</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          <Sass width="10rem" height="8rem" />
+          <TechName>SASS</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          <Javascript width="10rem" height="8rem" />
+          <TechName>JavaScript</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          <SCLogo width="10rem" height="8rem"  style={{fill: 'rgb(203,116,176)'}} />
+          <TechName>Styled Components</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          {/* <RLogo width="10rem" height="8rem" /> */}
+          <TechName>React</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          <GatLogo width="10rem" height="8rem" />
+          <TechName>Gatsby</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          <Ruby width="10rem" height="8rem" />
+          <TechName>Ruby</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          {/* <Rails width="10rem" height="8rem" /> */}
+          <TechName>Ruby on Rails</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          {/* <PostgresLogo width="10rem" height="8rem" /> */}
+          <TechName>PostgeSQL</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          {/* <Heroku width="10rem" height="8rem" /> */}
+          <TechName>Heroku</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          {/* <Firebase width="10rem" height="8rem" /> */}
+          <TechName>Firebase</TechName>
+        </TechGridItem>
+        <TechGridItem>
+          {/* <Gql width="10rem" height="8rem" /> */}
+          <TechName>GraphQL</TechName>
+        </TechGridItem>
+      </TechGrid>
+    </ProjectsGrid>
   </Layout>
 )
 
