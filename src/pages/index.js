@@ -9,6 +9,8 @@ import Div from '../styles/Div'
 import Paragraph from '../styles/Paragraph'
 import Image from "../components/image"
 import SEO from "../components/seo"
+
+// SVGs
 import Clock from '../assets/clock.svg'
 import Branding from '../assets/branding.svg'
 import Smartphone from '../assets/smartphone.svg'
@@ -226,9 +228,10 @@ const IndexPage = () => (
             <StepNumber>01</StepNumber>
             <StepDetails>
             <StepHeading>Content</StepHeading>
-            <StepText>The content strategy will inform the design choices for the website.
+              <StepText>
+                The content strategy will inform the design choices for the website.
                 Important things to cover are user stories, value propositions and visitor anticipations
-                </StepText>
+              </StepText>
             </StepDetails>
           </ProcessStep>
           
@@ -236,7 +239,8 @@ const IndexPage = () => (
             <StepNumber>02</StepNumber>
             <StepDetails>
             <StepHeading>Design & Develop</StepHeading>
-              <StepText>Wireframes, images and animations have to be perfected before development starts
+              <StepText>
+                Wireframes, images and animations have to be perfected before development starts
               </StepText>
             </StepDetails>
           </ProcessStep>
@@ -245,7 +249,8 @@ const IndexPage = () => (
             <StepNumber>03</StepNumber>
             <StepDetails>
             <StepHeading>Test & Deploy</StepHeading>
-              <StepText>Testing in order to discover bugs is an important step before the website is deployed
+              <StepText>
+                Testing in order to discover bugs is an important step before the website is deployed
               </StepText>
             </StepDetails>
           </ProcessStep>
@@ -254,7 +259,8 @@ const IndexPage = () => (
             <StepNumber>04</StepNumber>
             <StepDetails>
             <StepHeading>Conversation</StepHeading>
-              <StepText>Regular feedback and revisions are part of the process. Communication is essential to understand the requirements for each website
+              <StepText>
+                Regular feedback and revisions are part of the process. Communication is essential to understand the requirements for each website
               </StepText>
             </StepDetails>
           </ProcessStep>
@@ -262,7 +268,6 @@ const IndexPage = () => (
         </ProcessSteps>
       </Process>
     </Intro>
-    
   </Layout>
 )
 
