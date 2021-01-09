@@ -1,6 +1,7 @@
 // Navbar.js
 
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import NavbarLinks from "./NavbarLinks"
 import Logo from "../assets/logo.svg"
 import styled from 'styled-components'
@@ -98,7 +99,9 @@ const Navbar = () => {
 
   return (
     <Navigation>
-      <StyledLogo width="5rem" height="5rem" style={{ fill: '#FFC25B' }} />
+      <Link to='/'>
+        <StyledLogo width="5rem" height="5rem" style={{ fill: '#FFC25B' }} />
+      </Link>
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
