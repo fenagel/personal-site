@@ -2,7 +2,7 @@
 
 import React, { useState } from "react"
 import NavbarLinks from "./NavbarLinks"
-import Logo from "./Logo"
+import Logo from "../assets/logo.svg"
 import styled from 'styled-components'
 
 const Navigation = styled.nav`
@@ -89,13 +89,16 @@ const Hamburger = styled.div`
   }
 `
 
+const StyledLogo = styled(Logo)`
+  margin-top: 2rem;
+`
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
     <Navigation>
-      <Logo />
+      <StyledLogo width="5rem" height="5rem" style={{ fill: '#FFC25B' }} />
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}

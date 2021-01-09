@@ -124,6 +124,7 @@ const IntroHeading = styled.h1`
 const WebsiteFeatures = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 5rem;
   grid-column: center-start/center-end;
   margin: 0 10rem;
   justify-items: center;
@@ -195,25 +196,25 @@ const IndexPage = () => (
       <WebsiteFeatures>
         <Feature>
           <Clock width="15rem" height="15rem" style={{ fill: '#FFC25B' }} />
-          <Paragraph fSize="2rem">
+          <Paragraph fSize="2rem" textAlign="center" >
             Fast loading times!
           </Paragraph>
         </Feature>
         <Feature>
           <UserExp width="15rem" height="15rem" style={{ fill: '#FFC25B' }} />
-          <Paragraph fSize="2rem">
+          <Paragraph fSize="2rem" textAlign="center">
             Clear UI / UX
           </Paragraph>
         </Feature>
         <Feature>
           <Smartphone width="15rem" height="15rem" style={{ fill: '#FFC25B' }} />
-          <Paragraph fSize="2rem">
+          <Paragraph fSize="2rem" textAlign="center">
             Responsive for every screen
           </Paragraph>
         </Feature>
         <Feature>
           <Branding width="15rem" height="15rem" style={{ fill: '#FFC25B' }} />
-          <Paragraph fSize="2rem">
+          <Paragraph fSize="2rem" textAlign="center">
             Persuasive brand experience
           </Paragraph>
         </Feature>
