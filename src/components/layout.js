@@ -16,11 +16,22 @@ import styled from "styled-components"
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  html {
+    font-size: 62.5%;
+    @media only screen and (max-width: 81.25em) {
+      font-size: 50%;
+  }
+  
   body {
     margin: 0;
     padding: 0;
-    line-height: 1.58;
+    line-height: 1.8;
+
+    @media only screen and (max-width: 56.25em) {
+      line-height: 1.6;
+    }
   }
+
 `
 
 const Div = styled.div`

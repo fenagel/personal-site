@@ -72,6 +72,11 @@ const HeaderHome = styled.div`
   grid-column-gap: 5%;
   background-color: #292a2c;
   height: 70vh;
+
+  @media only screen and (max-width: 750px) {
+    height: 50vh;
+  }
+  
 `
 
 const H1Header = styled.h1`
@@ -81,6 +86,21 @@ const H1Header = styled.h1`
   grid-row: 1/2;
   grid-column: 2/3;
   animation: ${moveInLeft} 1s ease-out;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 750px) {
+    grid-column: 2/4;
+    animation: ${moveInBottom} 1s ease-out;
+    animation-fill-mode: backwards;
+  }
+}
 `
 
 const H2Header = styled.h2`
@@ -89,6 +109,16 @@ const H2Header = styled.h2`
   line-height: 1.1;
   grid-column: 2/3;
   animation: ${moveInLeft} 1s ease-out;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 750px) {
+    grid-column: 2/4;
+    animation: ${moveInBottom} 1s ease-out;
+    animation-fill-mode: backwards;
+  }
 `
 
 const StyledButton = styled(Button)`
@@ -97,6 +127,12 @@ const StyledButton = styled(Button)`
   align-self: start;
   justify-self: start;
   animation: ${moveInBottom} 1s ease-out;
+
+  @media only screen and (max-width: 750px) {
+    grid-column: 2/4;
+    animation: ${moveInLeft} 1s ease-out;
+    animation-fill-mode: backwards;
+  }
 `
 
 const HeaderImage = styled.div`
@@ -105,6 +141,10 @@ const HeaderImage = styled.div`
   align-self: start;
   justify-self: center;
   animation: ${moveInRight} 1s ease-out;
+
+  @media only screen and (max-width: 750px) {
+   display: none;
+  }
 `
 
 const Intro = styled.div`
@@ -119,6 +159,21 @@ const IntroHeading = styled.h1`
   text-align: center;
   margin-top: 15rem;
   margin-bottom: 10rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+
+  @media only screen and (max-width: 750px) {
+   font-size: 2rem;
+   margin-left: 6rem;
+   margin-right: 6rem;
+   margin-top: 10rem;
+   margin-bottom: 5rem;
+   text-align: left;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 1.8rem;
+  }
 `
 
 const WebsiteFeatures = styled.div`
@@ -130,7 +185,17 @@ const WebsiteFeatures = styled.div`
   justify-items: center;
   align-items: center;
   animation: ${moveInLeft} 2s ease-out;
+
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5rem;
+  }
+
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
 `
+
 const Feature = styled.div`
   display: grid;
   justify-items: center;
@@ -143,6 +208,23 @@ const Process = styled.div`
   grid-column-gap: 10rem;
   align-items: center;
   margin: 0 10rem;
+
+  @media only screen and (max-width: 850px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 5rem;
+    justify-items: center;
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin: 0 5rem;
+  }
+`
+
+const StyledProcessImage = styled(ProcessImage)`
+  @media only screen and (max-width: 500px) {
+    width: 25rem !important;
+    height: 25rem !important;
+  }
 `
 
 const ProcessSteps = styled.div`
@@ -158,6 +240,10 @@ const StepNumber = styled.p`
   font-size: 4rem;
   font-weight: 700;
   margin-right: 5rem;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 3rem;
+  }
 `
 
 const StepDetails = styled.div``
@@ -165,6 +251,10 @@ const StepDetails = styled.div``
 const StepHeading = styled.h3`
   font-size: 2rem;
   font-weight: 700;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 1.6rem;
+  }
 `
 
 const StepText = styled.p`
@@ -191,7 +281,7 @@ const IndexPage = () => (
     </HeaderHome>
     <Intro>
       <IntroHeading>
-        With my background online marketing & ecommerce<br></br>I know what today's websites need to be marketable.
+        With my background online marketing & ecommerce I know what today's websites need to be marketable
       </IntroHeading>
       <WebsiteFeatures>
         <Feature>
@@ -223,7 +313,7 @@ const IndexPage = () => (
         My Process for Building Good Websites
       </IntroHeading>
       <Process>
-        <ProcessImage width="40rem" height="40rem" />
+        <StyledProcessImage width="40rem" height="40rem" />
         <ProcessSteps>
           <ProcessStep>
             <StepNumber>01</StepNumber>

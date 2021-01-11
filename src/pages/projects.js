@@ -22,19 +22,12 @@ import Ruby from '../assets/ruby.svg'
 import Sass from '../assets/sass.svg'
 import SCLogo from '../assets/styled-components.svg'
 
-const ProjectsHeader = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  grid-column: full-start/full-end;
-  margin-bottom: 10rem;
-`
-
 const HeaderHeading = styled.h1`
   font-size: 4rem;
   font-weight: 700;
-  justify-self: start;
+  grid-column: full-start/full-end;
+  justify-self: center;
+  margin-bottom: 10rem;
 `
 
 const HeaderText = styled.h2`
@@ -136,12 +129,9 @@ const TechItem = styled.div`
 const Projects = () => (
   <Layout>
     <SEO title="Web Development Projects" />
-    <ProjectsHeader>
-      <StyledMobile height="35rem" width="35rem" />
-      <HeaderHeading>
-        Featured Projects
-      </HeaderHeading>
-    </ProjectsHeader>
+    <HeaderHeading>
+      Featured Projects
+    </HeaderHeading>
 
     <ProjectsGrid>
       <HeaderText>
