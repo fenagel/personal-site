@@ -344,7 +344,7 @@ const Projects = () => (
         <Project>
           <ProjectImage background={Pplpan} as="a" href="https://tinyhouses.herokuapp.com/" />
           <ProjectHeading>
-              The peoples plan - Mobile Game
+              The Peoples Plan - Mobile Game
           </ProjectHeading>
           <ProjectText>
             WIP: Influence local climate related policies with a gamified mobile website
