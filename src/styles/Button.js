@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const Button = styled.button`
-  -webkit-appearance: button;
   position: relative;
   overflow: hidden;
   display: inline-block;
