@@ -824,7 +824,7 @@ const IndexPage = () => (
         My Process for Building Good Websites
       </IntroHeading>
       <Process>
-        <StyledProcessImage width="40rem" height="40rem" />
+        <StyledProcessImage height="40rem" />
         <ProcessSteps>
           <ProcessStep>
             <StepNumber>01</StepNumber>
