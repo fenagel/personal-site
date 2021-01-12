@@ -78,8 +78,8 @@ const Project = styled.div`
 
 const ProjectImage = styled.div`
   background: url(${props => props.background});
-  width: 50rem;
-  height: 50rem;
+  width: 40rem;
+  height: 40rem;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
