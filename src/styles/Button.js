@@ -11,7 +11,7 @@ const Button = styled.button`
   border-radius: 10rem;
   border: none;
   color: #fff;
-  background: #FFC25B;
+  background: rgb(255,194,91);
   font-family: inherit;
   font-size: 1.7rem;
   line-height: 1.231;
