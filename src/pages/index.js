@@ -15,7 +15,7 @@ import Clock from '../assets/clock.svg'
 import Branding from '../assets/branding.svg'
 import Smartphone from '../assets/smartphone.svg'
 import UserExp from '../assets/user-experience.svg'
-import ProcessImage from '../assets/Process.svg'
+import ProcessImage from '../assets/process.svg'
 
 //Projects images
 import Mobile from '../assets/mobileapp.svg'
@@ -824,7 +824,7 @@ const IndexPage = () => (
         My Process for Building Good Websites
       </IntroHeading>
       <Process>
-        <StyledProcessImage height="40rem" />
+        <StyledProcessImage width="40rem" height="40rem" />
         <ProcessSteps>
           <ProcessStep>
             <StepNumber>01</StepNumber>

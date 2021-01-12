@@ -14,7 +14,7 @@ import Clock from '../assets/clock.svg'
 import Branding from '../assets/branding.svg'
 import Smartphone from '../assets/smartphone.svg'
 import UserExp from '../assets/user-experience.svg'
-import ProcessImage from '../assets/Process.svg'
+import ProcessImage from '../assets/process.svg'
 
 const moveInLeft = keyframes`
   0% {
