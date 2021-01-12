@@ -7,6 +7,13 @@ import Mobile from '../assets/mobileapp.svg'
 import Code from '../assets/code.svg'
 import Button from '../styles/Button'
 
+//Project images
+import Tinyhouse from '../images/tinyhouse.png'
+import Wyder from '../images/wyder.png'
+import Natours from '../images/natours.png'
+import Nexter from '../images/nexter.png'
+import Pplpan from '../images/pplplan.png'
+
 //Technologies Icons
 import Html from '../assets/html.svg'
 import CssLogo from '../assets/css.svg'
@@ -35,6 +42,10 @@ const HeaderText = styled.h2`
   font-weight: 700;
   text-align: center;
   margin-bottom: 10rem;
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 5rem;
+  }
 `
 
 const StyledMobile = styled(Mobile)`
@@ -45,6 +56,60 @@ const ProjectsGrid = styled.div`
   grid-column: center-start/center-end;
 `
 
+const ProjectWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 15rem;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 15rem;
+
+  @media only screen and (max-width: 600px) {
+    grid-row-gap: 8rem;
+    margin-bottom: 10rem;
+  }
+`
+
+const Project = styled.div`
+  display: grid;
+  justify-items: center;
+  align-items: center;
+`
+
+const ProjectImage = styled.div`
+  background: url(${props => props.background});
+  width: 50rem;
+  height: 50rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: 600px) {
+    width: 30rem;
+    height: 30rem;
+  }
+`
+
+const ProjectHeading = styled.h2`
+  font-size: 3rem;
+  @media only screen and (max-width: 500px) {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+`
+
+const ProjectText = styled.p`
+  font-size: 2rem;
+  justify-self: start;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 1.6rem;
+  }
+`
+
 const GitHubGrid = styled.div`
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -52,6 +117,17 @@ const GitHubGrid = styled.div`
   align-items: center;
   justify-items: center;
   margin-bottom: 10rem;
+  grid-column: center-start/center-end;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+`
+
+const StyledCode = styled(Code)`
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `
 
 const GitHubDiv = styled.div`
@@ -61,6 +137,10 @@ const GitHubDiv = styled.div`
 const GitHubText = styled.p`
   font-size: 1.8rem;
   margin-bottom: 5rem;
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 3rem;
+  }
 `
 
 const TechGrid = styled.div`
@@ -69,6 +149,10 @@ const TechGrid = styled.div`
   grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
   grid-row-gap: 5rem;
   grid-column-gap: .805rem;
+
+  @media only screen and (max-width: 500px) {
+    justify-items: center;
+  }
 `
 
 const TechGridItem = styled.div`
@@ -134,11 +218,78 @@ const Projects = () => (
     </HeaderHeading>
 
     <ProjectsGrid>
+      <ProjectWrapper>
+        <Project>
+          <ProjectImage background={Tinyhouse} as="a" href="https://tinyhouses.herokuapp.com/" />
+          <ProjectHeading>
+              Tinyhouses - AirBnB Clone
+          </ProjectHeading>
+          <ProjectText>
+            WIP: Users can list their tinyhouse or book a trip to one of the tinyhouses
+          </ProjectText>
+          <ProjectText>
+            Built with Ruby on Rails and hosted on Heroku
+          </ProjectText>
+        </Project>
+
+        <Project>
+          <ProjectImage background={Pplpan} as="a" href="https://tinyhouses.herokuapp.com/" />
+          <ProjectHeading>
+              The peoples plan - Mobile Game
+          </ProjectHeading>
+          <ProjectText>
+            WIP: Influence local climate related policies with a gamified mobile website
+          </ProjectText>
+          <ProjectText>
+            Backend API built with Ruby on Rails and a React frontend
+          </ProjectText>
+        </Project>
+
+        <Project>
+          <ProjectImage background={Wyder} as="a" href="http://www.wyder.xyz/" />
+          <ProjectHeading>
+              Wyder - University Video Platform
+          </ProjectHeading>
+          <ProjectText>
+            2-week bootcamp project for prospective students searching for the right university.
+          </ProjectText>
+          <ProjectText>
+            Built with Ruby on Rails and hosted on Heroku
+          </ProjectText>
+        </Project>
+
+        <Project>
+          <ProjectImage background={Natours} as="a" href="https://fenagel.github.io/nature-tours/" />
+          <ProjectHeading>
+              Nature Tours
+          </ProjectHeading>
+          <ProjectText>
+            Different animations, such as background images, background videos and hover effects.
+          </ProjectText>
+          <ProjectText>
+            Built with HTML and CSS
+          </ProjectText>
+        </Project>
+
+        <Project>
+          <ProjectImage background={Nexter} as="a" href="https://fenagel.github.io/nexter/" />
+          <ProjectHeading>
+              Nexter - Real Estate
+          </ProjectHeading>
+          <ProjectText>
+            Real estate landing page, with different css-grid implementations for  and card design.
+          </ProjectText>
+          <ProjectText>
+            Built with HTML and CSS
+          </ProjectText>
+        </Project>
+      </ProjectWrapper>
+
       <HeaderText>
         View my Projects on GitHub
       </HeaderText>
       <GitHubGrid>
-        <Code width="30rem" height="30rem" />
+        <StyledCode width="30rem" height="30rem" />
         <GitHubDiv>
           <GitHubText>
             For those curious, feel free to explore my GitHub profile.

@@ -10,7 +10,7 @@ import Email from '../assets/email.svg'
 import Socials from '../assets/socials.svg'
 import Map from '../assets/map.svg'
 
-const HeaderHeading = styled.h1`
+const ContactMain = styled.h1`
   font-size: 4rem;
   font-weight: 700;
   justify-self: center;
@@ -71,7 +71,7 @@ const Contact = () => (
   <Layout>
     <SEO title="Contact - web dev & online marketing" />
     <ContactHeader>
-      <HeaderHeading>Contact</HeaderHeading>
+      <ContactMain>Contact</ContactMain>
     </ContactHeader>
     <ContactGrid>
       <ContactGridItem>

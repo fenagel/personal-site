@@ -9,13 +9,13 @@ import Social from '../assets/social.svg'
 import Frameworks from '../assets/frameworks.svg'
 import Teamwork from '../assets/teamwork.svg'
 
-const HeaderHeading = styled.h1`
+const AboutHeader = styled.h1`
   font-size: 4rem;
   font-weight: 700;
   justify-self: center;
 `
 
-const AboutHeader = styled.div`
+const AboutWrapper = styled.div`
   display: grid;
   align-items: center;
   justify-items: center;
@@ -134,9 +134,9 @@ const AboutLi = styled.li`
 const About = () => (
   <Layout>
     <SEO title="About me - web dev & online marketing" />
-    <AboutHeader>
-      <HeaderHeading>About me</HeaderHeading>
-    </AboutHeader>
+    <AboutWrapper>
+      <AboutHeader>About me</AboutHeader>
+    </AboutWrapper>
 
     <AboutGrid>
       <StyledAnalytics width="25rem" height="25rem" />
