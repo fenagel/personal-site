@@ -10,7 +10,7 @@ const Button = styled.button`
   border-radius: 10rem;
   border: none;
   color: #fff;
-  background: rgb(255,194,91);
+  background: linear-gradient(to bottom right, #FFC25B, #DE9B29);
   font-family: inherit;
   font-size: 1.7rem;
   line-height: 1.231;
