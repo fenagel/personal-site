@@ -131,7 +131,11 @@ const StyledCode = styled(Code)`
 `
 
 const GitHubDiv = styled.div`
-
+  @media only screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const GitHubText = styled.p`
@@ -151,6 +155,7 @@ const TechGrid = styled.div`
   grid-column-gap: .805rem;
 
   @media only screen and (max-width: 500px) {
+    grid-template-columns: repeat(auto-fit,minmax(13rem,1fr));
     justify-items: center;
   }
 `
@@ -161,6 +166,10 @@ const TechGridItem = styled.div`
   justify-items: center;
   border-radius: 1.5rem;
   padding: 2rem;
+
+  @media only screen and (max-width: 800px) {
+    padding: 1rem;
+  }
 `
 
 const TechName = styled.p`
@@ -169,6 +178,10 @@ const TechName = styled.p`
   align-self: center;
   font-weight: 400;
   margin-top: 1rem;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 1.2rem;
+  }
 `
 
 const DotWrapper = styled.div`
@@ -208,6 +221,102 @@ const TechItem = styled.div`
   border-radius: 5px;
   height: 18rem;
   width: 18rem;
+
+  @media only screen and (max-width: 800px) {
+    width: 12rem;
+    height: 14rem;
+  }
+`
+
+const StyledHtml = styled(Html)`
+  @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledCssLogo = styled(CssLogo)`
+  @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledSass = styled(Sass)`
+  @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledFirebase = styled(Firebase)`
+ @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledGql = styled(Gql)`
+ @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledHeroku = styled(Heroku)`
+ @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledJavascript = styled(Javascript)`
+ @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledPostgresLogo = styled(PostgresLogo)`
+ @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledRails = styled(Rails)`
+ @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledRLogo = styled(RLogo)`
+ @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledRuby = styled(Ruby)`
+ @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledSCLogo = styled(SCLogo)`
+ @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
+const StyledGatLogo = styled(GatLogo)`
+ @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
 `
 
 const Projects = () => (
@@ -294,7 +403,7 @@ const Projects = () => (
           <GitHubText>
             For those curious, feel free to explore my GitHub profile.
           </GitHubText>
-          <Button as="a" href="www.github.com/fenagel">
+          <Button as="a" href="https://github.com/fenagel">
             Explore now!
           </Button>
         </GitHubDiv>
@@ -312,7 +421,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <Html width="10rem" height="8rem" />
+            <StyledHtml width="10rem" height="8rem" />
             <TechName>HTML</TechName>
           </TechGridItem>
         </TechItem>
@@ -324,7 +433,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <CssLogo width="10rem" height="8rem" />
+            <StyledCssLogo width="10rem" height="8rem" />
             <TechName>CSS</TechName>
           </TechGridItem>
         </TechItem>
@@ -336,7 +445,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <Sass width="10rem" height="8rem" />
+            <StyledSass width="10rem" height="8rem" />
             <TechName>SASS</TechName>
           </TechGridItem>
         </TechItem>
@@ -348,7 +457,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <Javascript width="10rem" height="8rem" />
+            <StyledJavascript width="10rem" height="8rem" />
             <TechName>JavaScript</TechName>
           </TechGridItem>
         </TechItem>
@@ -360,7 +469,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <SCLogo width="10rem" height="8rem"  style={{fill: 'rgb(203,116,176)'}} />
+            <StyledSCLogo width="10rem" height="8rem"  style={{fill: 'rgb(203,116,176)'}} />
             <TechName>Styled Components</TechName>
           </TechGridItem>
         </TechItem>
@@ -372,7 +481,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <RLogo width="10rem" height="8rem" />
+            <StyledRLogo width="10rem" height="8rem" />
             <TechName>React</TechName>
           </TechGridItem>
         </TechItem>
@@ -384,7 +493,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <GatLogo width="10rem" height="8rem" />
+            <StyledGatLogo width="10rem" height="8rem" />
             <TechName>Gatsby</TechName>
           </TechGridItem>
         </TechItem>
@@ -396,7 +505,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <Ruby width="10rem" height="8rem" />
+            <StyledRuby width="10rem" height="8rem" />
             <TechName>Ruby</TechName>
           </TechGridItem>
         </TechItem>
@@ -408,7 +517,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <Rails width="10rem" height="8rem" />
+            <StyledRails width="10rem" height="8rem" />
             <TechName>Ruby on Rails</TechName>
           </TechGridItem>
         </TechItem>
@@ -420,7 +529,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <PostgresLogo width="10rem" height="8rem" />
+            <StyledPostgresLogo width="10rem" height="8rem" />
             <TechName>PostgeSQL</TechName>
           </TechGridItem>
         </TechItem>
@@ -432,7 +541,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <Heroku width="10rem" height="8rem" />
+            <StyledHeroku width="10rem" height="8rem" />
             <TechName>Heroku</TechName>
           </TechGridItem>
         </TechItem>
@@ -444,7 +553,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <Firebase width="10rem" height="8rem" />
+            <StyledFirebase width="10rem" height="8rem" />
             <TechName>Firebase</TechName>
           </TechGridItem>
         </TechItem>
@@ -456,7 +565,7 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <Gql width="10rem" height="8rem" />
+            <StyledGql width="10rem" height="8rem" />
             <TechName>GraphQL</TechName>
           </TechGridItem>
         </TechItem>
