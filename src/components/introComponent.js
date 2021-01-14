@@ -1,10 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { keyframes } from "styled-components"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Button from '../styles/Button'
 import Paragraph from '../styles/Paragraph'
 import Image from "../components/image"
@@ -261,9 +258,8 @@ const StepText = styled.p`
   opacity: 0.85;
 `
 
-const IntroductionPage = () => (
-  <Layout>
-    <SEO title="Home" />
+const IntroComponent = () => (
+  <>
     <HeaderHome>
       <H1Header>
         Creating awesome websites and helping you market them effectively online!
@@ -358,7 +354,7 @@ const IntroductionPage = () => (
         </ProcessSteps>
       </Process>
     </Intro>
-  </Layout>
+  </>
 )
 
-export default IntroductionPage
+export default IntroComponent
