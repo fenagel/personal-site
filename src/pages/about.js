@@ -163,15 +163,15 @@ const About = () => (
       <StyledFrameworks width="25rem" height="25rem" />
       <AboutDetailsRight>
         <AboutHeading>I enjoy building websites with the newest technologies</AboutHeading>
-        <AboutText>I like to use modern JavaScript frameworks like React and to build backend APIs.</AboutText>
-        <AboutText>The website can be connected to a CMS so that content can be easily updated.</AboutText>
+        <AboutText>I like using modern JavaScript frameworks like React and building backend APIs.</AboutText>
+        <AboutText>The website can be connected to a CMS so that it is easy to update the content.</AboutText>
       </AboutDetailsRight>
     </AboutGrid>
 
     <AboutGrid>
       <AboutDetailsLeft>
         <AboutHeading>I love pair programming and collaborating on projects</AboutHeading>
-        <AboutText>Working with graphic designers, other devs or product managers is essential to achieve optimal results.</AboutText>
+        <AboutText>Working with graphic designers, other developers or product managers is essential to achieve optimal results.</AboutText>
       </AboutDetailsLeft>
       <StyledTeamwork width="25rem" height="25rem" style={{ color: '#fff'}} />
     </AboutGrid>
