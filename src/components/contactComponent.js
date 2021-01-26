@@ -73,7 +73,7 @@ const ContactComponent = () => (
       <ContactGridItem>
         <ContactHeading>Download My CV</ContactHeading>
         <Resume width="20rem" height="20rem" style={{ marginBottom: '5rem'}}/>
-        <Button as="a" href="https://drive.google.com/file/d/11slPuyaLF5rmbcvkigBO2x36hM-S_eQ1/view?usp=sharing">Download now!</Button>
+        <Button as="a" href="https://drive.google.com/file/d/1WiXKPPW9tD4U7gO7R5-SF3GybBzXz-5U/view?usp=sharing">Download now!</Button>
       </ContactGridItem>
 
       <ContactGridItem>
