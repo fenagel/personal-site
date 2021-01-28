@@ -332,7 +332,7 @@ const ProjectsComponent = () => (
               Tinyhouses - AirBnB Clone
           </ProjectHeading>
           <ProjectText>
-            WIP: Users can list their tinyhouse or book a trip to one of the tinyhouses
+            WIP: Users can list their tinyhouse or book a trip to one of the tinyhouses. Users have a dashboard to view their upcoming trips or manage their listings.
           </ProjectText>
           <ProjectText>
             Built with Ruby on Rails and hosted on Heroku
@@ -340,12 +340,12 @@ const ProjectsComponent = () => (
         </Project>
 
         <Project>
-          <ProjectImage background={Pplpan} as="a" href="https://tinyhouses.herokuapp.com/" />
+          <ProjectImage background={Pplpan} as="a" href="http://people-s-plan.herokuapp.com/" />
           <ProjectHeading>
-              The Peoples Plan - Mobile Game
+              The Peoples Plan - Mobile Website
           </ProjectHeading>
           <ProjectText>
-            WIP: Influence local climate related policies with a gamified mobile website
+            WIP: Designed and developed a gamified survey app for The People’s Plan, a global collaborative community trying to find innovative solutions to the climate crisis. Not designed for desktop!
           </ProjectText>
           <ProjectText>
             Backend API built with Ruby on Rails and a React frontend
@@ -358,7 +358,7 @@ const ProjectsComponent = () => (
               Wyder - University Video Platform
           </ProjectHeading>
           <ProjectText>
-            2-week bootcamp project for prospective students searching for the right university.
+          2-week bootcamp project for prospective students searching for the right university. Visitors can filter results based on subject, degree and location. Users can view bookmarked university programmes in a dashboard.
           </ProjectText>
           <ProjectText>
             Built with Ruby on Rails and hosted on Heroku
@@ -371,7 +371,7 @@ const ProjectsComponent = () => (
               Nature Tours
           </ProjectHeading>
           <ProjectText>
-            Different animations, such as background images, background videos and hover effects.
+            Different animations, such as background images, background videos and hover effects. Concepts applied include: Sass-Mixins, media queries, responsive images.
           </ProjectText>
           <ProjectText>
             Built with HTML and CSS
@@ -384,7 +384,7 @@ const ProjectsComponent = () => (
               Nexter - Real Estate
           </ProjectHeading>
           <ProjectText>
-            Real estate landing page, with different css-grid implementations for  and card design.
+            Real estate landing page, with different css-grid implementations for  and card design. Css-grid concepts included are grid layouts for entire page layouts, applying css-grid to image gallerys and card structure.
           </ProjectText>
           <ProjectText>
             Built with HTML and CSS
