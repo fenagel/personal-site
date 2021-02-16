@@ -8,7 +8,7 @@ import Button from '../styles/Button'
 //Project images
 import Tinyhouse from '../images/tinyhouse.png'
 import Wyder from '../images/wyder.png'
-import Natours from '../images/natours.png'
+import Baldovin from '../images/Baldovin.png'
 import Nexter from '../images/nexter.png'
 import Pplpan from '../images/pplplan.png'
 
@@ -353,6 +353,19 @@ const ProjectsComponent = () => (
         </Project>
 
         <Project>
+          <ProjectImage background={Baldovin} as="a" href="https://baldovinphotography.com/" />
+          <ProjectHeading>
+              Baldovin Photography
+          </ProjectHeading>
+          <ProjectText>
+          Website for a freelance photographer to showcase some of her work. Images are optimized with Gatsby Image components and hosted on the headless Contentful CMS.
+          </ProjectText>
+          <ProjectText>
+            Built with GatsbyJS, Sass and Contentful.
+          </ProjectText>
+        </Project>
+
+        <Project>
           <ProjectImage background={Wyder} as="a" href="http://www.wyder.xyz/" />
           <ProjectHeading>
               Wyder - University Video Platform
@@ -362,19 +375,6 @@ const ProjectsComponent = () => (
           </ProjectText>
           <ProjectText>
             Built with Ruby on Rails and hosted on Heroku
-          </ProjectText>
-        </Project>
-
-        <Project>
-          <ProjectImage background={Natours} as="a" href="https://fenagel.github.io/nature-tours/" />
-          <ProjectHeading>
-              Nature Tours
-          </ProjectHeading>
-          <ProjectText>
-            Different animations, such as background images, background videos and hover effects. Concepts applied include: Sass-Mixins, media queries, responsive images.
-          </ProjectText>
-          <ProjectText>
-            Built with HTML and CSS
           </ProjectText>
         </Project>
 
