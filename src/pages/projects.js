@@ -1,33 +1,33 @@
 import React from "react"
-import styled from 'styled-components'
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Mobile from '../assets/mobileapp.svg'
-import Code from '../assets/code.svg'
-import Button from '../styles/Button'
+import Mobile from "../assets/mobileapp.svg"
+import Code from "../assets/code.svg"
+import Button from "../styles/Button"
 
 //Project images
-import Tinyhouse from '../images/tinyhouse.png'
-import Wyder from '../images/wyder.png'
-import Baldovin from '../images/Baldovin.png'
-import Nexter from '../images/nexter.png'
-import Pplpan from '../images/pplplan.png'
+import Tinyhouse from "../images/tinyhouse.png"
+import Wyder from "../images/wyder.png"
+import Baldovin from "../images/Baldovin.png"
+import Nexter from "../images/nexter.png"
+import Pplpan from "../images/pplplan.png"
 
 //Technologies Icons
-import Html from '../assets/html.svg'
-import CssLogo from '../assets/css.svg'
-import Firebase from '../assets/firebase.svg'
-import Gql from '../assets/graphql.svg'
-import Heroku from '../assets/heroku.svg'
-import GatLogo from '../assets/gatsby.svg'
-import Javascript from '../assets/javascript.svg'
-import PostgresLogo from '../assets/postgresql.svg'
-import Rails from '../assets/rails.svg'
-import RLogo from '../assets/reactlogo.svg'
-import Ruby from '../assets/ruby.svg'
-import Sass from '../assets/sass.svg'
-import SCLogo from '../assets/styled-components.svg'
+import Html from "../assets/html.svg"
+import CssLogo from "../assets/css.svg"
+import Firebase from "../assets/firebase.svg"
+import Gql from "../assets/graphql.svg"
+import Heroku from "../assets/heroku.svg"
+import GatLogo from "../assets/gatsby.svg"
+import Javascript from "../assets/javascript.svg"
+import PostgresLogo from "../assets/postgresql.svg"
+import Rails from "../assets/rails.svg"
+import RLogo from "../assets/reactlogo.svg"
+import Ruby from "../assets/ruby.svg"
+import Sass from "../assets/sass.svg"
+import SCLogo from "../assets/styled-components.svg"
 
 const HeaderHeading = styled.h1`
   font-size: 4rem;
@@ -150,12 +150,12 @@ const GitHubText = styled.p`
 const TechGrid = styled.div`
   margin-bottom: 10rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-row-gap: 5rem;
-  grid-column-gap: .805rem;
+  grid-column-gap: 0.805rem;
 
   @media only screen and (max-width: 500px) {
-    grid-template-columns: repeat(auto-fit,minmax(13rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     justify-items: center;
   }
 `
@@ -204,19 +204,23 @@ const BrowserDot = styled.div`
 `
 
 const Dot1 = styled(BrowserDot)`
-  background-color: rgba(52,58,64,.8);
+  background-color: rgba(52, 58, 64, 0.8);
 `
 
 const Dot2 = styled(BrowserDot)`
-  background-color: rgba(52,58,64,.8);
+  background-color: rgba(52, 58, 64, 0.8);
 `
 
 const Dot3 = styled(BrowserDot)`
-  background-color: rgba(52,58,64,.8);
+  background-color: rgba(52, 58, 64, 0.8);
 `
 
 const TechItem = styled.div`
-  background: linear-gradient(to right bottom,rgba(108,117,125,.8),rgba(52,58,64,.8));
+  background: linear-gradient(
+    to right bottom,
+    rgba(108, 117, 125, 0.8),
+    rgba(52, 58, 64, 0.8)
+  );
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   height: 18rem;
@@ -250,70 +254,70 @@ const StyledSass = styled(Sass)`
 `
 
 const StyledFirebase = styled(Firebase)`
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     width: 9rem;
     height: 7rem;
   }
 `
 
 const StyledGql = styled(Gql)`
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     width: 9rem;
     height: 7rem;
   }
 `
 
 const StyledHeroku = styled(Heroku)`
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     width: 9rem;
     height: 7rem;
   }
 `
 
 const StyledJavascript = styled(Javascript)`
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     width: 9rem;
     height: 7rem;
   }
 `
 
 const StyledPostgresLogo = styled(PostgresLogo)`
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     width: 9rem;
     height: 7rem;
   }
 `
 
 const StyledRails = styled(Rails)`
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     width: 9rem;
     height: 7rem;
   }
 `
 
 const StyledRLogo = styled(RLogo)`
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     width: 9rem;
     height: 7rem;
   }
 `
 
 const StyledRuby = styled(Ruby)`
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     width: 9rem;
     height: 7rem;
   }
 `
 
 const StyledSCLogo = styled(SCLogo)`
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     width: 9rem;
     height: 7rem;
   }
 `
 
 const StyledGatLogo = styled(GatLogo)`
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     width: 9rem;
     height: 7rem;
   }
@@ -322,19 +326,21 @@ const StyledGatLogo = styled(GatLogo)`
 const Projects = () => (
   <Layout>
     <SEO title="Web Development Projects" />
-    <HeaderHeading>
-      Featured Projects
-    </HeaderHeading>
+    <HeaderHeading>Featured Projects</HeaderHeading>
 
     <ProjectsGrid>
       <ProjectWrapper>
         <Project>
-          <ProjectImage background={Tinyhouse} as="a" href="https://tinyhouses.herokuapp.com/" />
-          <ProjectHeading>
-              Tinyhouses - AirBnB Clone
-          </ProjectHeading>
+          <ProjectImage
+            background={Tinyhouse}
+            as="a"
+            href="https://tinyhouses.herokuapp.com/"
+          />
+          <ProjectHeading>Tinyhouses - AirBnB Clone</ProjectHeading>
           <ProjectText>
-            WIP: Users can list their tinyhouse or book a trip to one of the tinyhouses. Users have a dashboard to view their upcoming trips or manage their listings.
+            WIP: Users can list their tinyhouse or book a trip to one of the
+            tinyhouses. Users have a dashboard to view their upcoming trips or
+            manage their listings.
           </ProjectText>
           <ProjectText>
             Built with Ruby on Rails and hosted on Heroku
@@ -342,12 +348,16 @@ const Projects = () => (
         </Project>
 
         <Project>
-          <ProjectImage background={Pplpan} as="a" href="http://people-s-plan.herokuapp.com/" />
-          <ProjectHeading>
-              The Peoples Plan - Mobile Website
-          </ProjectHeading>
+          <ProjectImage
+            background={Pplpan}
+            as="a"
+            href="https://game.peoplesplan.org/"
+          />
+          <ProjectHeading>The Peoples Plan - Mobile Website</ProjectHeading>
           <ProjectText>
-            WIP: Designed and developed a gamified survey app for The People’s Plan, a global collaborative community trying to find innovative solutions to the climate crisis. Not designed for desktop!
+            WIP: Designed and developed a gamified survey app for The People’s
+            Plan, a global collaborative community trying to find innovative
+            solutions to the climate crisis. Not designed for desktop!
           </ProjectText>
           <ProjectText>
             Backend API built with Ruby on Rails and a React frontend
@@ -355,25 +365,32 @@ const Projects = () => (
         </Project>
 
         <Project>
-          <ProjectImage background={Baldovin} as="a" href="https://baldovinphotography.com/" />
-          <ProjectHeading>
-              Baldovin Photography
-          </ProjectHeading>
+          <ProjectImage
+            background={Baldovin}
+            as="a"
+            href="https://baldovinphotography.com/"
+          />
+          <ProjectHeading>Baldovin Photography</ProjectHeading>
           <ProjectText>
-          Website for a freelance photographer to showcase some of her work. Images are optimized with Gatsby Image components and hosted on the headless Contentful CMS.
+            Website for a freelance photographer to showcase some of her work.
+            Images are optimized with Gatsby Image components and hosted on the
+            headless Contentful CMS.
           </ProjectText>
-          <ProjectText>
-            Built with GatsbyJS, Sass and Contentful.
-          </ProjectText>
+          <ProjectText>Built with GatsbyJS, Sass and Contentful.</ProjectText>
         </Project>
 
         <Project>
-          <ProjectImage background={Wyder} as="a" href="http://www.wyder.xyz/" />
-          <ProjectHeading>
-              Wyder - University Video Platform
-          </ProjectHeading>
+          <ProjectImage
+            background={Wyder}
+            as="a"
+            href="http://www.wyder.xyz/"
+          />
+          <ProjectHeading>Wyder - University Video Platform</ProjectHeading>
           <ProjectText>
-            2-week bootcamp project for prospective students searching for the right university. Visitors can filter results based on subject, degree and location. Users can view bookmarked university programmes in a dashboard.
+            2-week bootcamp project for prospective students searching for the
+            right university. Visitors can filter results based on subject,
+            degree and location. Users can view bookmarked university programmes
+            in a dashboard.
           </ProjectText>
           <ProjectText>
             Built with Ruby on Rails and hosted on Heroku
@@ -381,22 +398,23 @@ const Projects = () => (
         </Project>
 
         <Project>
-          <ProjectImage background={Nexter} as="a" href="https://fenagel.github.io/nexter/" />
-          <ProjectHeading>
-              Nexter - Real Estate
-          </ProjectHeading>
+          <ProjectImage
+            background={Nexter}
+            as="a"
+            href="https://fenagel.github.io/nexter/"
+          />
+          <ProjectHeading>Nexter - Real Estate</ProjectHeading>
           <ProjectText>
-          Real estate landing page, with different css-grid implementations for  and card design. Css-grid concepts included are grid layouts for entire page layouts, applying css-grid to image gallerys and card structure.
+            Real estate landing page, with different css-grid implementations
+            for and card design. Css-grid concepts included are grid layouts for
+            entire page layouts, applying css-grid to image gallerys and card
+            structure.
           </ProjectText>
-          <ProjectText>
-            Built with HTML and CSS
-          </ProjectText>
+          <ProjectText>Built with HTML and CSS</ProjectText>
         </Project>
       </ProjectWrapper>
 
-      <HeaderText>
-        View my Projects on GitHub
-      </HeaderText>
+      <HeaderText>View my Projects on GitHub</HeaderText>
       <GitHubGrid>
         <StyledCode width="30rem" height="30rem" />
         <GitHubDiv>
@@ -409,9 +427,7 @@ const Projects = () => (
         </GitHubDiv>
       </GitHubGrid>
 
-      <HeaderText>
-        Technologies
-      </HeaderText>
+      <HeaderText>Technologies</HeaderText>
 
       <TechGrid>
         <TechItem>
@@ -469,7 +485,11 @@ const Projects = () => (
             <Dot3 />
           </DotWrapper>
           <TechGridItem>
-            <StyledSCLogo width="10rem" height="8rem"  style={{fill: 'rgb(203,116,176)'}} />
+            <StyledSCLogo
+              width="10rem"
+              height="8rem"
+              style={{ fill: "rgb(203,116,176)" }}
+            />
             <TechName>Styled Components</TechName>
           </TechGridItem>
         </TechItem>
@@ -570,7 +590,6 @@ const Projects = () => (
           </TechGridItem>
         </TechItem>
       </TechGrid>
-
     </ProjectsGrid>
   </Layout>
 )
