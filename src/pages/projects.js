@@ -25,6 +25,7 @@ import Javascript from "../assets/javascript.svg"
 import PostgresLogo from "../assets/postgresql.svg"
 import Rails from "../assets/rails.svg"
 import RLogo from "../assets/reactlogo.svg"
+import VLogo from "../assets/vuejs.svg"
 import Ruby from "../assets/ruby.svg"
 import Sass from "../assets/sass.svg"
 import SCLogo from "../assets/styled-components.svg"
@@ -302,6 +303,13 @@ const StyledRLogo = styled(RLogo)`
   }
 `
 
+const StyledVLogo = styled(VLogo)`
+  @media only screen and (max-width: 800px) {
+    width: 9rem;
+    height: 7rem;
+  }
+`
+
 const StyledRuby = styled(Ruby)`
   @media only screen and (max-width: 800px) {
     width: 9rem;
@@ -503,6 +511,18 @@ const Projects = () => (
           <TechGridItem>
             <StyledRLogo width="10rem" height="8rem" />
             <TechName>React</TechName>
+          </TechGridItem>
+        </TechItem>
+
+        <TechItem>
+          <DotWrapper>
+            <Dot1 />
+            <Dot2 />
+            <Dot3 />
+          </DotWrapper>
+          <TechGridItem>
+            <StyledVLogo width="10rem" height="8rem" />
+            <TechName>Vue</TechName>
           </TechGridItem>
         </TechItem>
 

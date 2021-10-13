@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import Button from '../styles/Button'
+import Button from "../styles/Button"
 
 //SVGs
-import Resume from '../assets/resume.svg'
-import Email from '../assets/email.svg'
-import Socials from '../assets/socials.svg'
-import Map from '../assets/map.svg'
+import Resume from "../assets/resume.svg"
+import Email from "../assets/email.svg"
+import Socials from "../assets/socials.svg"
+import Map from "../assets/map.svg"
 
 const ContactMain = styled.h1`
   font-size: 4rem;
@@ -72,19 +72,32 @@ const ContactComponent = () => (
     <ContactGrid>
       <ContactGridItem>
         <ContactHeading>Download My CV</ContactHeading>
-        <Resume width="20rem" height="20rem" style={{ marginBottom: '5rem'}}/>
-        <Button as="a" href="https://drive.google.com/file/d/1UDmyVvqxYn96WXZO9vIT5OXDR09NXJac/view?usp=sharing">Download now!</Button>
+        <Resume width="20rem" height="20rem" style={{ marginBottom: "5rem" }} />
+        <Button
+          as="a"
+          href="https://drive.google.com/file/d/1UDmyVvqxYn96WXZO9vIT5OXDR09NXJac/view?usp=sharing"
+        >
+          Download now!
+        </Button>
       </ContactGridItem>
 
       <ContactGridItem>
-        <ContactHeading>Email me at <br></br>felixnagel105@gmail.com</ContactHeading>
+        <ContactHeading>
+          Email me at <br></br>felixnagel105@gmail.com
+        </ContactHeading>
         <Email width="20rem" height="20rem" />
       </ContactGridItem>
 
       <ContactGridItem>
         <ContactHeading>Let's connect on LinkedIn</ContactHeading>
-        <Socials width="20rem" height="20rem" style={{ color: '#fff', marginBottom: '5rem'}} />
-        <Button as="a" href="https://www.linkedin.com/in/fenagel/" >Connect!</Button>
+        <Socials
+          width="20rem"
+          height="20rem"
+          style={{ color: "#fff", marginBottom: "5rem" }}
+        />
+        <Button as="a" href="https://www.linkedin.com/in/fenagel/">
+          Connect!
+        </Button>
       </ContactGridItem>
 
       <ContactGridItem>
