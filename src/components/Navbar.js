@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import NavbarLinks from "./NavbarLinks"
 import Logo from "../assets/logo.svg"
-import styled from 'styled-components'
+import styled from "styled-components"
 
 const Navigation = styled.nav`
   height: 10vh;
@@ -15,6 +15,7 @@ const Navigation = styled.nav`
   text-transform: uppercase;
   padding: 0 5vw;
   z-index: 2;
+  background-color: none;
   grid-column: full-start/full-end;
 
   @media (max-width: 768px) {
@@ -24,6 +25,7 @@ const Navigation = styled.nav`
     left: 0;
     right: 0;
     left: 0;
+    background-color: #292a2c;
   }
 `
 
@@ -50,7 +52,7 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #292A2C;
+    background-color: #292a2c;
     color: #fff;
     transition: all 0.3s ease-in;
     top: 8vh;
@@ -62,7 +64,7 @@ const Hamburger = styled.div`
   background-color: #fff;
   width: 30px;
   height: 3px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   align-self: center;
   position: relative;
   transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
@@ -99,8 +101,8 @@ const Navbar = () => {
 
   return (
     <Navigation>
-      <Link to='/'>
-        <StyledLogo width="5rem" height="5rem" style={{ fill: '#FFC25B' }} />
+      <Link to="/">
+        <StyledLogo width="5rem" height="5rem" style={{ fill: "#FFC25B" }} />
       </Link>
       <Toggle
         navbarOpen={navbarOpen}

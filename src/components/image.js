@@ -30,10 +30,12 @@ const Image = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img
-              fixed={data.placeholderImage.childImageSharp.fixed}
-              imgStyle={{borderRadius: '50%'}}
-          />
+  return (
+    <Img
+      fixed={data.placeholderImage.childImageSharp.fixed}
+      imgStyle={{ borderRadius: "20%" }}
+    />
+  )
 }
 
 export default Image
